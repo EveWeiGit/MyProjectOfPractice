@@ -1,0 +1,38 @@
+//-
+    Created by WangWei(000267) on 2016/12/12.
+    Email: 277545993@qq.com
+    Name: 首页
+    
+extends ../../templates/layouts/default.pug
+block vars
+    //- 配置模版类型  0默认 1积分商城 2旅游度假
+    - var type = 0
+    //- title 页面标题,body.cls  <body class="">,body.key  <body page-key="">,keywords 页面关键词,description
+    - var config = {title:"酒店赠礼", body:{cls:"clsTest",key:"keyTest"},keywords:'酒店赠礼',description:'酒店赠礼'}
+//- 页面使用到的css
+block css
+    link(href='dest/css/index.css', rel="stylesheet")
+block js
+    script(src='dest/js/index.min.js')
+    
+//- 页面主体内容
+block content
+      .Container
+        .bg.bg1 
+        .bg.bg2
+        .bg.bg3
+        .bg.bg4
+        .bg.bg5
+        .bg.bg6
+        .bg.bg7
+        .bg.bg8
+        .bg.bg9
+        .bg.bg10
+        .bg.bg11
+        .bg.bg12
+        .bg.bg13
+        .bg.bg14
+            .btn
+              a(href='http://www.booking.com/index.html?aid=842219' target='_blank') 立即预订
+               
+

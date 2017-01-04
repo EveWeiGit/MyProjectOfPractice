@@ -1,0 +1,158 @@
+//-
+    Created by Alan(000058) on 2016/11/11.
+    Email: 1480801@qq.com
+    Name: 积分商城头部模版
+.h_toolbar
+    .span5 &nbsp;
+    .span7
+        .inline 手机购物,下载东方航空APP
+            span#zCode.icon
+                a(href='#')
+                    img(src='/assets/images/MC_r2_c15.jpg')
+                .h_appcode(style='display:none;')
+                    img(src='/assets/images/appcode.png')
+                ||
+        #userlogininfo.inline.userInfo
+            a(href='javascript:void(0)')
+                span 登录
+            ||
+            a(href='http://easternmiles.ceair.com/mpf/#/home/index')
+                span 注册
+            ||
+        .inline.website
+            a(href='http://www.ceair.com/',target='_blank') 东航官网
+    .clear
+#header.container-fluid.header_box
+    .span4
+        a(href='/home/index')
+            img.logo(src='/assets/images/logo.png')
+    .span8
+        .search_bar
+            form#headerSearch(method='get',action='/search')
+                input#key_word.input(type='text',name='key_word',value='iphone',title='iphone')
+                input.button(type='submit',value='搜索')
+        #cartWrap.cart
+            a.cart_btn2(href='/cart')
+                span.icon
+                span.txt 购物车
+                span#carnumber.number 0
+                span.arrow
+            //购物车下拉框
+            .fixcart &nbsp;
+            #cartList.cartList
+                #cartData.cartData
+                    .noCartData
+                        i.icon2
+                        span.txt 购物车中还没有商品，赶紧选购吧！
+                .bottomFooter(style='display:none;')
+                    .left
+                        div 已选择
+                            span#totcaritem
+                            |件商品
+                        div 总价：积分
+                            b#totscore
+                            | +现金
+                            b#totprice
+                    .right
+                        a(href='#') 去购物车
+    .clear
+.clear
+.h_nav
+    .container-fluid
+        #allCate.allCate
+            span.allText 全部商品分类
+            //所有分类
+            #mainmenuarea
+                .container-fluid
+                    #menubox.all-sort-list
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 手机数码
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='5')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 家用电器
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='1')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 电脑&nbsp;/&nbsp;办公
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='4')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 家居&nbsp;/&nbsp;家纺&nbsp;/&nbsp;百货
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='7')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 珠宝饰品&nbsp;/&nbsp;奢侈品&nbsp;/&nbsp;箱包&nbsp;/&nbsp;钟表
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='6')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 母婴
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='3')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 运动户外&nbsp;/&nbsp;汽车用品
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='2')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 生活服务
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='9')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                        .itemmenu
+                            h3
+                                span &nbsp;
+                                a(style='font-size: 14px;') 全球购
+                                span.arrow_right
+                            .item-list.clearfix(style='display: none;',data-ajax='true',data-id='10')
+                                #ajax_loading.ajax_loading.ajax_loading2.absolute
+                                    .info
+                                    .mask
+                    .all-sort-list-bg
+                    .clear
+        ul#navAdList
+            li
+                a(href='/act/a037/act.html') 品牌专区
+            li
+                a(href='/act/a300/act.html') 旅游度假
+            li
+                a(href='http://shopping.ceair.com/act/a207/act.html') 6折特惠购
+        .clear

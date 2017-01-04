@@ -1,0 +1,63 @@
+//-
+    Created by WangWei(000267) on 2016/12/12.
+    Email: 277545993@qq.com
+    Name: 首页
+    
+extends ../../templates/layouts/default.pug
+block vars
+    //- 配置模版类型  0默认 1积分商城 2旅游度假
+    - var type = 0
+    //- title 页面标题,body.cls  <body class="">,body.key  <body page-key="">,keywords 页面关键词,description
+    - var config = {title:"兰蔻活动", body:{cls:"clsTest",key:"keyTest"},keywords:'兰蔻活动',description:'兰蔻活动'}
+//- 页面使用到的css
+block css
+    link(href='dest/css/index.css', rel="stylesheet")
+//- 页面主体内容
+block content
+      .Container
+        .bg.bg1 
+        .bg.bg2
+        .bg.bg3
+        .bg.bg4
+        .bg.bg5
+        .bg.bg6
+        .bg.bg7
+        .bg.bg8
+        a(href='http://vacations.ceair.com/Activity/Activity/PC?activityId=20&utm_source=LK&utm_medium=banner&utm_term=&utm_content=&utm_campaign=LK' target='_blank')
+          .bg.bg9
+        .bg.bg10
+        .bg.bg11
+        .bg.bg12
+        .bg.bg13
+        a(href='http://vacations.ceair.com/Product/Product/HotelDetail?ProductID=310010538&utm_source=LK&utm_medium=banner&utm_term=&utm_content=&utm_campaign=LK&c=01229' target='_blank')
+          .bg.bg14
+        .bg.bg15
+        .bg.bg16
+        .bg.bg17
+        .bg.bg18
+        a(href='http://vacations.ceair.com/Product/Product/HotelDetail?ProductID=310010762&utm_source=LK&utm_medium=banner&utm_term=&utm_content=&utm_campaign=LK&c=01229' target='_blank')
+          .bg.bg19
+        .bg.bg20
+        .bg.bg21
+        .bg.bg22
+        .bg.bg23
+        a(href='http://vacations.ceair.com/Product/Product/HotelDetail?ProductID=310010295&utm_source=LK&utm_medium=banner&utm_term=&utm_content=&utm_campaign=LK&c=01229' target='_blank')
+          .bg.bg24
+        .bg.bg25
+        .bg.bg26
+        .bg.bg27
+        .bg.bg28
+        a(href='http://vacations.ceair.com/Product/Product/HotelDetail?ProductID=310010678&utm_source=LK&utm_medium=banner&utm_term=&utm_content=&utm_campaign=LK&c=01229' target='_blank')
+          .bg.bg29
+        .bg.bg30
+        .pop-index
+           .pop-small(style='left:-172px')
+              img(src='dest/images/suoxiao.png',id='small-img')
+           .pop-wrap
+              .pop-box
+                .pop-link(title='兰蔻活动')
+                a.pop-close(id='close',title='关闭')  
+
+
+block js
+    script(src='dest/js/index.min.js')
