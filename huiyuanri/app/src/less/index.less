@@ -1,0 +1,379 @@
+@darkRed: #990033;
+@lightRed: #D71518;
+@bgcolor: #eee;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "微软雅黑", "黑体", "Microsoft YaHei UI", "Microsoft YaHei", "SimSun", "宋体", "Segoe UI", Tahoma, Helvetica, Sans-Serif;
+    // &,&:after,&:before {
+    // 	  box-sizing: border-box;
+    // }
+}
+
+.Container {
+    .headimg img {
+        display: block;
+        width: 100%;
+    }
+    .tabBtn {
+        height: 255px;
+        width: 100%;
+        background-color: @bgcolor;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 255px;
+        display: block;
+        .btn {
+            height: 165px;
+            vertical-align: middle;
+            padding-top: 40px;
+            button {
+                display: block;
+                background-color: @darkRed;
+                width: 245px;
+                height: 78px;
+                border: transparent;
+                ;
+                float: left;
+                color: #fff;
+                font-size: 28px;
+                margin-top: 7px;
+                &:nth-child(1),
+                &:nth-child(4) {
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+                &:nth-child(3),
+                &:nth-child(6) {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                    float: right;
+                }
+                &:nth-child(2),
+                &:nth-child(5) {
+                    border-radius: 10px;
+                    margin-left: 7px;
+                    margin-right: 7px;
+                }
+            }
+            .active {
+                background-color: @lightRed;
+                display: block;
+            }
+
+        }
+    }
+    	.hide{
+            	display: none;
+            }
+    .NewYearContent,
+    .TicketContent,
+    .JoinIdCardContent,
+    .LifeAppContent,
+    .SpringTiketContent,
+    .TravelProductContent {
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        .photo {
+            display: block;
+            margin: 0 auto;
+            padding-top: 50px;
+            a {
+                text-decoration: none;
+                // width: 710px;
+                // height: 450px;
+                display: block;
+                margin: 10px auto;
+			
+			img{
+				width:710px;
+				height:450px;
+			}
+            }
+
+        }
+        .NewTitle {
+            line-height: 160px;
+            color: @darkRed;
+            font-size: 54px;
+            strong {
+                font-size: 76px;
+            }
+            b {
+                font-size: 80px;
+            }
+        }
+        .Newhead {
+            font-size: 40px;
+            color: @darkRed;
+            text-align: center;
+            line-height: 80px;
+        }
+        .bhead {
+            font-size: 40px;
+            color: #333;
+            text-align: center;
+            line-height: 60px;
+        }
+        .LifeHeader {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        .LifeTitle {
+            font-size: 52px;
+            color: @darkRed;
+            text-align: center;
+            line-height: 80px;
+        }
+        p {
+            font-size: 28px;
+            line-height: 50px;
+            color: #333;
+        }
+        .txt {
+            font-size: 36px;
+            text-align: justify;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 20px;
+        }
+        .text {
+            text-align: justify;
+            font-size: 28px;
+            line-height: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .ptext {
+            .text;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .redtxt {
+            color: @darkRed;
+        }
+        .boldtext {
+            padding-top: 30px;
+            color: @darkRed;
+            font-size: 36px;
+        }
+        .main {
+            margin-top: 36px;
+            font-size: 30px;
+            line-height: 1.8em;
+            word-break: break-all;
+            padding-left: 25px;
+            padding-right: 25px;
+            li {
+                span {
+                    color: @darkRed;
+                    font-weight: bold;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .ActiveRules {
+        font-size: 28px;
+        color: #333;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        background-color: @bgcolor;
+        .text {
+            text-align: justify;
+            font-size: 28px;
+            line-height: 50px;
+            padding-left: 25px;
+            padding-right: 25px;
+            margin-bottom: 30px;
+        }
+        .btxt {
+            font-size: 22px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            line-height: 40px;
+        }
+        .headrule {
+            font-size: 40px;
+            color: #333;
+            text-align: center;
+            line-height: 110px;
+        }
+        .headRuler {
+            font-size: 40px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        dt {
+            position: absolute;
+        }
+        dd {
+            text-align: justify;
+            padding-left: 50px;
+        }
+        // .ruler {
+        //     display: none;
+        // }
+    }
+    .ActiveTip {
+        font-size: 28px;
+        color: #333;
+        text-align: left;
+        line-height: 50px;
+        padding:60px 25px;
+        .headrule {
+            font-size: 40px;
+            color: #333;
+            text-align: center;
+            line-height: 110px;
+        }
+        dt {
+            position: absolute;
+        }
+        dd {
+            text-align: justify;
+            padding-left: 50px;
+        }
+    }
+    .RulerNo {
+        font-size: 28px;
+        color: #333;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        dl {
+            color: @darkRed;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        dt {
+            position: absolute;
+        }
+        dd {
+            text-align: justify;
+            padding-left: 50px;
+            padding-bottom: 40px;
+        }
+    }
+    .WayNo {
+        font-size: 36px;
+        color: #333;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        dl {
+            color: #333;
+            font-size: 36px;
+            padding-top: 20px;
+        }
+        dt {
+            position: absolute;
+            font-weight: bold;
+        }
+        dd {
+            text-align: justify;
+            padding-left: 130px;
+        }
+    }
+    .SaleDate {
+        font-size: 28px;
+        color: #333;
+        text-align: left;
+        line-height: 50px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 50px;
+        dl {
+            color: #333;
+            font-size: 28px;
+            padding-top: 20px;
+        }
+        dt {
+            position: absolute;
+            font-weight: bold;
+            color: @darkRed;
+        }
+        dd {
+            text-align: justify;
+            padding-left: 140px;
+        }
+    }
+    .JoinBox {
+        display: block;
+        height: 268px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 188px;
+        .JoinBtn {
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 688px;
+                height: 86px;
+                background-color: @lightRed;
+                border: transparent;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 42px;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 86px;
+            }
+        }
+        
+    }
+
+    .Booking {
+        display: block;
+        height: 258px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 108px;
+        .JoinBtn {
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 688px;
+                height: 86px;
+                background-color: @lightRed;
+                border: transparent;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 42px;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 86px;
+            }
+        }
+        
+    .RecommendBtn {
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 688px;
+                height: 86px;
+                border: 1px solid @lightRed;
+                /*px*/
+                border-radius: 10px;
+                color: @lightRed;
+                font-size: 42px;
+                font-weight: bold;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 86px;
+            }
+        }
+    }
+}
