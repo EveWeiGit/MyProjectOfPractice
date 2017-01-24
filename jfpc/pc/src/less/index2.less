@@ -1,0 +1,73 @@
+@border_color: rgba(0, 0, 0, 0.15);
+body {
+    background-color: #fff;
+}
+
+.main-content {
+    margin-bottom: 100px;
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+   
+    .Banner {
+        background-position: center;
+        margin-bottom: 50px;
+    }
+    .BodyContent {
+        .GoodsArea {
+            margin: 0 auto 30px;
+            width: 1220px;
+            background-color: #fff;
+
+            .GoodsTop {
+                width: 1207px;
+                height: 300px;
+                margin-bottom: 30px;
+                border: 1px solid @border_color;
+                .GoodsImg {
+                    float: left;
+                }
+                .GoodsInfo {
+                    float: left;
+                    width: 270px;
+                    line-height: 24px;
+                    margin-left: 47px;
+                    .info {
+                        display: inline-block;
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: 240px;
+                        text-align: justify;
+                        padding-top: 58px;
+                        color: #333;
+                    }
+                    .price {
+                        padding-top: 13px;
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                            b {
+                                font-size: 18px;
+                            }
+                        }
+                        color:#FF5374;
+                    }
+                    .explain {
+                        border-top: 1px solid #979797;
+                        width: 304px;
+                        margin-top: 51px;
+                        p {
+                            margin-top: 34px;
+                            font-size: 14px;
+                            color: #848587;
+                            line-height: 19px;
+                            width: 276px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
