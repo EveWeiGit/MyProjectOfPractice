@@ -1,0 +1,78 @@
+@border_color: rgba(0, 0, 0, 0.15);
+body {
+    background-color: #fff;/*#FE9BA4*/
+}
+
+.main-content {
+    margin-bottom: 100px;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        width: 300px;
+    }
+    
+    .Banner {
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    .BodyContent {
+        .GoodsArea {
+            margin: 0 auto;
+            width: 1224px;
+            height: 300px;
+            vertical-align: middle;
+            line-height: 300px;
+            margin-bottom: 20px;
+            .GoodsLeft,.GoodsRight {
+                width: 590px;
+                height: 300px;
+                float: left;
+                vertical-align: middle;
+                line-height: 300px;
+                margin-right: 20px;
+                background-color: #fff;
+                border:1px solid @border_color;
+                .GoodsImg {
+                    width: 300px;
+                    vertical-align: middle;
+                    line-height: 300px;
+                    float: left;
+                    display: inline-block;
+                    text-align: center;
+                    img {
+                        display: inline-block;
+                        width: 80%;
+                        vertical-align: middle;
+                        line-height: 300px;
+                    }
+                }
+                .GoodsInfo {
+                    float: left;
+                    width: 270px;
+                    line-height: 28px;
+                    .info {
+                        display: inline-block;
+                        font-size: 16px;
+                        line-height: 28px;
+                        width: 229px;
+                        text-align: justify;
+                        padding-top: 70px;
+                    }
+                    .price {
+                        padding-top: 50px;
+                        color:#FF5374;
+                        p {
+                            margin: 0;
+                            font-size: 14px;
+                            b {
+                                font-size: 18px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}

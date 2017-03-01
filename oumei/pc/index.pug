@@ -1,0 +1,121 @@
+//-
+    Created by WangWei(000267) on 2017/02/13.
+    Email: 277545993@qq.com
+    Name: 首页
+    
+extends ../../templates/layouts/default.pug
+block vars
+    //- 配置模版类型  0默认 1积分商城 2旅游度假
+    - var type = 0
+    //- title 页面标题,body.cls  <body class="">,body.key  <body page-key="">,keywords 页面关键词,description
+    - var config = {title:"欧美澳新中东", body:{cls:"clsTest",key:"keyTest"},keywords:'欧美澳新中东',description:'欧美澳新中东'}
+//- 页面使用到的css
+block css
+    link(href='dest/css/index.css', rel="stylesheet")
+//- 页面主体内容
+block content
+      .Container
+        .bg.bg1
+           .link
+             .linkContent
+               a(onclick="document.getElementById('America').scrollIntoView()")
+               a(onclick="document.getElementById('Europe').scrollIntoView()")
+               a(onclick="document.getElementById('Australia').scrollIntoView()")
+               a(onclick="document.getElementById('MiddleEast').scrollIntoView()")    
+        .bg.bg2
+        .bg.bg3(name='America',id='America')
+        .bg.bg4
+        a(href='http://vacations.ceair.com/detail/310011004.html',target='_blank')
+           .bg.bg5
+        .bg.bg6
+        a(href='http://vacations.ceair.com/detail/310010970.html',target='_blank')
+           .bg.bg7
+        .bg.bg8
+        .bg.bg9
+           .travel
+            a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vMGNlMzBkYzBlNzNjMDhiMTNlNDdlZDhmMzVlMmNlMGUvUzAxVVMwMTcxcnA3NS5odG0',target='_blank')
+               img(src='dest/images/tr7.jpg')
+            a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vMjUyYjA4NjFkYWM5Y2MyN2RjM2U1MDgzZDg4MWFlMDcvUzAxVVMwMTkxeng5My5odG0',target='_blank')
+               img(src='dest/images/tr8.jpg')  
+             
+        a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXovb3BzL2F0dHJhY3Rpb24tc2VhcmNoLnNodG1sP3doZXJlLmtleVdvcmRzPSUyNUU3JTI1QkUlMjU4RSUyNUU1JTI1OUIlMjVCRCZ3aGVyZS5jYXRlZ29yeT0=',target='_blank')
+           .bg.bg10
+        .bg.bg11(name='Europe',id='Europe')
+        .bg.bg12
+           .travelright
+             a(href='http://vacations.ceair.com/detail/310010161.html',target='_blank')
+               img(src='dest/images/p1.png')
+        .bg.bg13
+            .travelleft
+             a(href='http://vacations.ceair.com/detail/310010372.html',target='_blank')
+               img(src='dest/images/p2.png')
+        .bg.bg14
+             a(href='http://vacations.ceair.com/Product/Product/TravelList?search=%E6%AC%A7%E6%B4%B2',target='_blank')
+               .serch
+        .bg.bg15
+            .travel
+             a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vYjBiN2E4N2JkOWQwNGZkYTM3ZmRlY2ZhMmI1ZWJlNDIvUzAxRlIwM1QwNTA2NC5odG0',target='_blank')
+               img(src='dest/images/tr1.jpg')
+             a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vMzE2MWQwODZkNjlmYzhkMjJmMGYwY2ZiOTk2ZjlkODMvRDRwRlIwM1QwMDYxNy5odG0',target='_blank')
+               img(src='dest/images/tr2.jpg')
+        .bg.bg16
+            .btn
+               a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXovb3BzL2F0dHJhY3Rpb24tc2VhcmNoLnNodG1sP3doZXJlLmtleVdvcmRzPSUyNUU2JTI1QUMlMjVBNyUyNUU2JTI1QjQlMjVCMiZ3aGVyZS5jYXRlZ29yeT0=',target='_blank') 更多欧洲当地玩乐推荐&gt;&gt;&gt; 
+        .bg.bg17(name='Australia',id='Australia')
+        .bg.bg18
+        .bg.bg19
+            .travelright
+             a(href='http://vacations.ceair.com/detail/310010993.html',target='_blank')
+               img(src='dest/images/p3.png')
+        .bg.bg20
+            .travelleft
+             a(href='http://vacations.ceair.com/detail/310010766.html',target='_blank')
+               img(src='dest/images/p4.png')
+        .bg.bg21
+            a(href='http://vacations.ceair.com/Product/Product/TravelList?search=%E6%BE%B3%E6%B4%B2%E6%96%B0%E8%A5%BF%E5%85%B0',target='_blank')
+               .serch
+        .bg.bg22
+            .travel
+             a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vOWEyNGNhZDlkNzQ2MTQ0M2YwNDYzNmUyN2IyM2IwMDMvRGVkTlowMlowMTU3NS5odG0',target='_blank')
+               img(src='dest/images/tr3.jpg')
+             a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vMDFlMGQ0Y2YyZWE3Y2FkZjAzMGI1YzVjMDI3Y2MyMjIvUzAxQVUwMk8wN3YyOC5odG0',target='_blank')
+               img(src='dest/images/tr44.jpg')
+        .bg.bg23
+            .btn
+               a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXovb3BzL2F0dHJhY3Rpb24tc2VhcmNoLnNodG1sP3doZXJlLmtleVdvcmRzPSUyNUU2JTI1QkUlMjVCMyUyNUU1JTI1QTQlMjVBNyUyNUU1JTI1ODglMjVBOSUyNUU0JTI1QkElMjU5QSZ3aGVyZS5jYXRlZ29yeT0=',target='_blank') 更多澳新当地玩乐推荐&gt;&gt;&gt; 
+        .bg.bg24(name='MiddleEast',id='MiddleEast')
+        .bg.bg25
+            .travel
+             a(href='http://vacations.ceair.com/detail/310010235.html',target='_blank')
+               img(src='dest/images/p5.png')
+        .bg.bg26
+        .bg.bg27
+            .travel
+             a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vNjI4ZGE1OTU0ODI1NjNiN2E0ZTY1NjY2NTE3MDFhNGUvUzAxQUUwRFcwcXA5MC5odG0',target='_blank')
+               img(src='dest/images/tr5.jpg')
+             a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXo6ODAvb3BzL2l0ZW0vNWIzNWY0NTI4MjZjMzBjZmZlODA3ODhjOTE5MjU2M2IvUzAxQUUwRFc4M2MyMy5odG0',target='_blank')
+               img(src='dest/images/tr6.jpg')
+        .bg.bg28
+            .btn
+               a(href='http://location.ceair.com/lixing/lixing_zone.html?url=aHR0cDovL2NlYWlyLmxpeGluZy5iaXovb3BzL2F0dHJhY3Rpb24tc2VhcmNoLnNodG1sP3doZXJlLmtleVdvcmRzPSUyNUU5JTI1OTglMjVCRiUyNUU4JTI1ODElMjU5NCUyNUU5JTI1ODUlMjU4QiZ3aGVyZS5jYXRlZ29yeT0=',target='_blank') 更多中东当地玩乐推荐&gt;&gt;&gt; 
+            .btnred
+               a(href='http://vacations.ceair.com/Activity/Activity/PC?activityId=15&utm_source=vacation_home&utm_medium=banner&utm_term=&utm_content=&utm_campaign=CX&Entry=1',target='_blank') 更多【欧美澳新中东非】自由行/跟团游&nbsp;&nbsp;
+                b 点击订购
+                |&gt;&gt;&gt;
+            .ruler
+               p 东方万里行会员日活动送积分营销活动规则:
+               p 1、本活动仅限东方万里行会员参与；非会员下单无法获赠积分，可在完成注册后参与活动；
+               p 2、活动时间：2017年2月18日-2017年2月25日
+               p 3、活动规则：凡在2017年2月18日-2017年2月25日购买旅游度假频道内【欧洲/澳大利亚/新西兰/美国/加拿大/迪拜/埃及/土耳其/南非】区域内指定产品（即自由行、小众游产品但不包含当地玩乐频道）的东方万里行会员，均可获得积分奖励。非会员可在完成注册后参与活动。
+               p 4、具体积分奖励如下：实付现金金额小于5000元的订单，赠送积分比例1:1，即2000元返2000分；实付现金金额大于等于5000元的订单，统一返积分5000分。本活动所奖励的积分均为消费积分（
+                 a(href='http://www.ceair.com/guide2/hycjwtjd/t201348_9042.html',target='_blank') 何为消费积分
+                 |）。
+               p 5、活动限制：订单中积分抵扣、优惠券抵扣等部分，不参与积分赠送。同一账户可下多个订单，但当日最高累计返积分为5000分。
+               p 6、积分发放：积分发放将在订单出行日的7天之内，自动加入到账户中；逾期未收到，可拨打服务热线95530-1-6；服务时间：每周一至周日8:00-24:00。
+               p 7、积分有效期：自积分到账之日起三年内有效。  
+        .bg.bg29
+         
+
+
+block js
+    script(src='dest/js/index.min.js')
