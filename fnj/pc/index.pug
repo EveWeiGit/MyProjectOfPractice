@@ -1,0 +1,43 @@
+//-
+    Created by WangWei(000267) on 2016/12/12.
+    Email: 277545993@qq.com
+    Name: 首页
+    
+extends ../../templates/layouts/default.pug
+block vars
+    //- 配置模版类型  0默认 1积分商城 2旅游度假
+    - var type = 0
+    //- title 页面标题,body.cls  <body class="">,body.key  <body page-key="">,keywords 页面关键词,description
+    - var config = {title:"三八节给特别的你", body:{cls:"clsTest",key:"keyTest"},keywords:'三八节给特别的你',description:'三八节给特别的你'}
+//- 页面使用到的css
+block css
+    link(href='dest/css/index.css', rel="stylesheet")
+block js
+    script(src='dest/js/index.min.js')
+    
+//- 页面主体内容
+block content
+      .Container
+        .bg.bg1 
+        .bg.bg2
+        .bg.bg3
+          a(href='https://vacations.ceair.com/detail/310011113.html?c=70308',target='_blank')
+        .bg.bg4
+          a(href='https://vacations.ceair.com/detail/310010993.html?c=70308',target='_blank')
+        .bg.bg5
+          a(href='https://vacations.ceair.com/detail/310010978.html?c=70308',target='_blank')
+        .bg.bg6
+          a(href='https://vacations.ceair.com/Product/Product/TravelList?search=%E5%A6%87%E5%A5%B3%E8%8A%82%E7%A6%8F%E5%88%A9',target='_blank')
+        .bg.bg7
+        .bg.bg8
+            a(href='http://shopping.ceair.com/detail/133302.html',target='_blank')
+               img(src='dest/images/good1.jpg')
+            a(href='http://shopping.ceair.com/detail/22314.html',target='_blank')
+               img(src='dest/images/good2.jpg')
+            a(href='http://shopping.ceair.com/detail/29788.html',target='_blank')
+               img(src='dest/images/good3.jpg')
+        .bg.bg9
+          a(href='http://shopping.ceair.com/act/a382/index.html',target='_blank')
+        .bg.bg10
+               
+
