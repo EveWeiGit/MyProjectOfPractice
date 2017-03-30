@@ -1,0 +1,104 @@
+//-
+    Created by WangWei(000267) on 2017/03/20.
+    Email: 277545993@qq.com
+    Name: 首页
+    
+extends ../../templates/layouts/default.pug
+//- extends ./layouts/default.pug
+block vars
+    //- 配置模版类型  0默认 1积分商城 2旅游度假
+    - var type = 0
+    //- title 页面标题,body.cls  <body class="">,body.key  <body page-key="">,keywords 页面关键词,description
+    - var config = {title:"Genius", body:{cls:"clsTest",key:"keyTest"},keywords:'Genius',description:'Genius'}
+//- 页面使用到的css
+block css
+    link(href='dest/css/index.css', rel="stylesheet")
+block js
+    script(src='dest/js/index.min.js')
+    
+//- 页面主体内容
+block content
+        .Container
+            .banner
+            .description
+                .descri
+                    .header
+                        img(src='dest/images/left.png')
+                        span 什么是订房达人卡（Genius）？
+                        img(src='dest/images/right.png')
+                    .content 为回馈“东方万里行”会员，东航与全球领先的订房网站
+                        b Booking.com缤客
+                        |合作，推出订房达人卡活动，“东方万里行”会员可通过此次活动免费领取“订房达人卡”，并通过东航官网和APP的指定酒店预订入口预订，可获得积分和折扣双重优惠。
+                    .receive
+                        span 活动期间每日名额有限，领完为止
+                    .loginPassway
+                        .passway 登录通道：
+                        .info
+                            span 点击酒店频道搜索框下方的标示登录，订房达人卡——
+                            .differ
+                              span Booking.com缤客
+                              span Genius
+                    .logoimg
+                        img(src='dest/images/website.png')
+            .fourRights
+                .header
+                    img(src='dest/images/left.png')
+                    span 订房达人卡Genius会员四大权益
+                    img(src='dest/images/right.png')
+                .circleBg
+                    .row1
+                       .title 少花钱 
+                       span Genius会员可享专属折扣，最高可省50%。记得通过东航酒店频道Genius入口登录即可！
+                    .row2
+                        .leftMess
+                            .title 享折扣 
+                            span Genius会员预订全球热门住宿部分可享受9折优惠
+                        .middleMess 订房达人卡Genius
+                        .rightMess
+                            .title 得礼遇 
+                            span 部分酒店提供免费迎宾饮料、免费机场接送和延迟退房等旅行礼遇。
+                    .row3
+                        .title 赚积分
+                        span 预订酒店每消费10元可获得10点“东方万里行”积分
+                        span 详见活动规则3
+            .activeRuler
+                .ruler
+                    .header
+                        img(src='dest/images/lef.png')
+                        span 活动规则
+                        img(src='dest/images/righ.png')
+                    .list
+                        .rulerBox
+                            .logo1
+                            |活动时间：2017年4月1日-2017年4月5日（领完为止）。用户领取到激活码后需在2个月内登录您的邮箱点击激活链接进行账户激活即可享受订房达人卡会员的权益，在激活日期后的6个月内完成3个有效预订并入住即可延长订房达人卡的会员权益。
+                        .rulerBox
+                            .logo2
+                            |活动适用于“东方万里行”会员登入东方航空官网及东方航空APP酒店现付频道预订享 受（请在预订页面输入“东方万里行”会员号以便获得活动奖励）通过其他途径预订将无法享受该活动优惠。
+                        .rulerBox
+                            .logo3
+                            |符合奖励条件的“东方万里行”积分，将在用户预订并住宿完成后的3个月内存入用户账户。积分查询路径 “东航官网及东航APP --会员专区--积分历史查询”。            
+                        .rulerBox
+                            .logo4
+                            |该活动所指消费价格为实际住宿房费，不含酒店服务费、酒店收取的税金、当地税费、酒店餐饮及加床等费用。用户将以酒店当地的货币付费给酒店。所显示的人民币价格仅供参考，届时所获取的“东方万里行”积分将根据汇率有所变动。    
+                        .rulerBox
+                            .logo5
+                            |东方航空电子商务有限公司对此活动具有依法的解释调整终止权利。
+            //弹窗和遮盖层
+            .window
+                //遮盖层
+                .showModel
+                //弹窗主体
+                .inputbox
+                    .mainBox
+                        img(src='dest/images/layer.png')
+                        .messBox
+                            .box1
+                                label 请输入您的手机号码:
+                                input(type='text')#phone
+                            .box2
+                                label 请输入您的邮箱地址:
+                                input(type='text')#email
+                            .tips 完成提交后我们将会把激活链接发送到这个邮箱，收到后请点击邮件内的链接地址即可激活会员。
+                            .commitBtn 提交
+
+
